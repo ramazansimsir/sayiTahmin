@@ -1,0 +1,20 @@
+topic: ~baslangic()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+concept:(merhaba) [merhaba selam selamlar]
+concept:(oyna)[oyna oynayalım başla başlayalım]
+
+proposal: %first Merhabalar ben sosyal insansı robot pepır. Bugün sizlerle sayı tahmini oyunu oynayacağız.
+Oyuna başlamak için "başla", nasıl oynandığını öğrenmek için "nasıl oynanır" diyebilirsiniz.
+
+
+u:(~merhaba) merhaba
+u:(~oyna) tamam başlıyalım %second .
+u:(nasıl oynanır) Ben aklımdan 1 ile ,10 arasında bir sayı tutuyorum. Daha sonra sizde tahmin etmeye çalışıyorsunuz.
+Söylediğiniz sayi tuttuğum sayidan küçükse küçüktür derim. Büyükse büyüktür derim.
+
+
+

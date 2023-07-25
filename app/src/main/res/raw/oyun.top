@@ -1,0 +1,22 @@
+topic: ~oyun()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+
+concept:(evet) [evet tekrar]
+u:(sayı söyle) answer $sayi
+
+u:(_[1 2 3 4 5 6 7 8 9 10]) çok güzel $kullanici=$1 ^first[
+"$sayi>$kullanici yukarı çık %bignum ."
+"$sayi<$kullanici aşağı in %smallnum ."
+"$sayi==$kullanici tebrikler doğru tahmin %equalnum . Tekrar oynamak ister misiniz ? oynamak isterseniz evet istemiyorsanız hayır demelisiniz"
+"1 ile 10 arasında sayı söylemediniz"
+]
+    u1:(~evet) tamam tekrar başlayalım %yenioyun .
+    u1:(hayır) oynadığın için teşekkür ederim %bitir .
+
+
+
+
